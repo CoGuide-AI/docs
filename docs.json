@@ -42,7 +42,16 @@
             "pages": [
               "privacy-security",
               "data-protection",
-              "compliance"
+              "compliance",
+              "certifications",
+              "security"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "privacy-policy",
+              "terms-of-service"
             ]
           },
           {
