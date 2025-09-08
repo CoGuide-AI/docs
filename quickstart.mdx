@@ -1,80 +1,137 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Set up CoGuide Hybrid Mode in your classroom in minutes"
 ---
 
-## Get started in three steps
+## Get started with CoGuide Standby
 
-Get your documentation site running locally and make your first customization.
+Set up CoGuide Hybrid Mode in your classroom in three simple steps and start seeing participation clearly while keeping your teaching flow intact.
 
-### Step 1: Set up your local environment
+### Step 1: Set up your classroom
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+  <Accordion icon="video" title="Install CoGuide app">
+    Download and install the CoGuide application on your classroom device. The app works on Windows, macOS, and tablets.
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+    <Steps>
+      <Step title="Download">
+        Visit [coguide.ai/download](https://coguide.ai/download) to get the latest version.
+      </Step>
+      <Step title="Install">
+        Follow the installation wizard and create your teacher account.
+      </Step>
+      <Step title="Verify">
+        Launch the app and ensure your camera and microphone are working properly.
+      </Step>
+    </Steps>
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion icon="map" title="Upload your seat map">
+    Create a simple seating chart to track participation by location, not faces.
+
+    <Steps>
+      <Step title="Create seat map">
+        Use our simple seat mapping tool to label seats (A1, A2, B1, etc.) or upload an existing classroom layout.
+      </Step>
+      <Step title="Test positioning">
+        Position your device to capture the classroom view and verify all seats are visible.
+      </Step>
+      <Step title="Calibrate">
+        Run a quick calibration to ensure accurate participation tracking.
+      </Step>
+    </Steps>
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+### Step 2: Configure Standby mode
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+  <Accordion icon="shield" title="Set privacy preferences">
+    Configure your privacy settings to ensure student data stays secure and school-owned.
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+    <Steps>
+      <Step title="Choose data location">
+        Select your school's cloud storage or local processing for maximum privacy.
+      </Step>
+      <Step title="Set retention policy">
+        Choose how long to keep classroom data (recommended: 30-90 days).
+      </Step>
+      <Step title="Enable offline mode">
+        Allow CoGuide to work without internet and sync when connected.
+      </Step>
+    </Steps>
+  </Accordion>
+  <Accordion icon="sliders" title="Customize tracking features">
+    Choose which participation metrics to track during your classes.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+    <Steps>
+      <Step title="Enable hand raise detection">
+        Turn on automatic hand raise detection and counting.
+      </Step>
+      <Step title="Set talk time tracking">
+        Configure teacher vs. student talk time monitoring.
+      </Step>
+      <Step title="Choose wait time alerts">
+        Set up notifications for extended wait times after questions.
+      </Step>
+    </Steps>
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+### Step 3: Start your first class
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
+<Accordion icon="play" title="Begin monitoring">
+  Launch Standby mode and start teaching with enhanced participation awareness.
+
+  <Steps>
+    <Step title="Start recording">
+      Click "Start Standby" to begin monitoring your classroom participation.
+    </Step>
+    <Step title="Teach normally">
+      Focus on your lesson while CoGuide tracks participation in the background.
+    </Step>
+    <Step title="Review insights">
+      After class, access detailed analytics and participation reports.
+    </Step>
+  </Steps>
 </Accordion>
+
+## What you'll see during class
+
+CoGuide Standby provides a small, unobtrusive overlay showing:
+
+- **Hand raises**: Live count of students with hands up
+- **Talk time**: Separate meters for teacher and student speaking time
+- **Turns**: Number of student participation opportunities
+- **Wait time**: Duration after questions before responses
+
+<Note>
+  **No disruption**: Standby mode is observation-only. No prompts, no cold calls, just awareness.
+</Note>
 
 ## Next steps
 
-Now that you have your docs running, explore these key features:
+Now that you have CoGuide running, explore these features:
 
 <CardGroup cols={2}>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card title="Live monitoring" icon="eye" href="/hybrid-mode/live-monitoring">
+  Learn about real-time participation tracking features.
 </Card>
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
+<Card title="Analytics insights" icon="chart-line" href="/analytics-insights">
+  Discover detailed post-class reports and engagement analysis.
 </Card>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
+<Card title="Privacy & security" icon="shield" href="/privacy-security">
+  Understand how CoGuide protects student privacy and data.
 </Card>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
+<Card title="Integrations" icon="plug" href="/integrations">
+  Connect CoGuide with Google Classroom, Canvas, and other tools.
 </Card>
 
 </CardGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  **Need help?** Contact our support team at [support@coguide.ai](mailto:support@coguide.ai) or visit [coguide.ai](https://coguide.ai) for more resources.
 </Note>

@@ -1,0 +1,499 @@
+---
+title: "Privacy & Security"
+description: "How CoGuide protects student privacy and keeps data secure"
+---
+
+## Privacy-first design
+
+CoGuide is built with privacy and security as fundamental principles. We believe that classroom technology should enhance learning without compromising student privacy or creating security risks.
+
+<Note>
+  **Core principle**: Your school owns the data. CoGuide processes it securely and never uses it for purposes beyond improving classroom engagement.
+</Note>
+
+## Data protection framework
+
+### What data we collect
+
+CoGuide collects only the minimum data necessary to provide classroom insights:
+
+#### Participation data
+- **Hand raise events**: When students raise their hands (no facial recognition)
+- **Speaking patterns**: Voice activity and timing (no voice recording or storage)
+- **Seat participation**: Which seats participate (when using seat mapping)
+- **Response timing**: When students respond to questions
+
+#### What we don't collect
+- **Facial images**: No facial recognition or facial data collection
+- **Voice recordings**: No audio recording or voice storage
+- **Personal information**: No names, student IDs, or identifying details
+- **Biometric data**: No fingerprint, face, or other biometric information
+- **Location data**: No GPS or location tracking beyond classroom seat positions
+
+### Data processing and storage
+
+<Columns cols={2}>
+  <Card title="Local processing" icon="laptop">
+    **On-device analysis**
+    - All analysis happens on your classroom device
+    - No data sent to external servers during class
+    - Real-time processing for immediate insights
+    - Complete privacy during active monitoring
+  </Card>
+  
+  <Card title="School-owned storage" icon="building">
+    **Your school controls data**
+    - Data stored in your school's cloud or local servers
+    - School IT administrators control access
+    - No third-party data sharing
+    - Complete data ownership and control
+  </Card>
+</Columns>
+
+## Privacy protection measures
+
+### No facial recognition
+
+CoGuide explicitly does not use facial recognition technology:
+
+<Steps>
+  <Step title="Computer vision only">
+    Uses computer vision to detect hand-raising gestures and general classroom activity.
+  </Step>
+  
+  <Step title="No face analysis">
+    Never analyzes, stores, or processes facial images or biometric data.
+  </Step>
+  
+  <Step title="Gesture detection">
+    Focuses only on detecting participation gestures like raised hands.
+  </Step>
+  
+  <Step title="Anonymous tracking">
+    All participation data is tied to seat locations, not individual identities.
+  </Step>
+</Steps>
+
+### Seat mapping privacy
+
+When using seat mapping, privacy is maintained through location-based tracking:
+
+#### Anonymous participation
+- **Seat numbers only**: Participation tied to A1, A2, B1, etc., not student names
+- **No identity linking**: Seat numbers are not linked to student identities
+- **Pattern analysis**: Focus on participation patterns, not individual students
+- **Aggregate reporting**: Analytics show classroom trends, not individual performance
+
+#### Data minimization
+- **Essential data only**: Collect only participation timing and frequency
+- **No personal details**: No names, photos, or identifying information
+- **Temporary storage**: Data kept only as long as needed for analysis
+- **Automatic purging**: Old data automatically deleted according to retention policies
+
+### Voice and audio privacy
+
+CoGuide processes voice data for participation tracking without recording or storing audio:
+
+<AccordionGroup>
+  <Accordion title="Real-time processing">
+    - Voice data processed in real-time for participation detection
+    - No audio recording or storage
+    - Voice patterns analyzed for speaking time calculation
+    - Audio data discarded immediately after processing
+  </Accordion>
+  
+  <Accordion title="No voice storage">
+    - No audio files created or stored
+    - No voice recordings saved
+    - No speech-to-text conversion stored
+    - No voice data transmitted to external servers
+  </Accordion>
+  
+  <Accordion title="Privacy protection">
+    - Voice data never leaves the classroom device
+    - No voice analysis beyond participation detection
+    - No voice recognition or identification
+    - Complete audio privacy maintained
+  </Accordion>
+</AccordionGroup>
+
+## Security measures
+
+### Data encryption
+
+All data is protected with industry-standard encryption:
+
+#### Encryption in transit
+- **TLS 1.3**: All data transmission encrypted with latest TLS standards
+- **End-to-end encryption**: Data encrypted from device to storage
+- **Certificate pinning**: Prevents man-in-the-middle attacks
+- **Secure protocols**: Only secure communication protocols used
+
+#### Encryption at rest
+- **AES-256**: Data encrypted with military-grade encryption
+- **Key management**: Encryption keys managed securely
+- **Separate keys**: Different encryption keys for different data types
+- **Regular rotation**: Encryption keys rotated regularly
+
+### Access controls
+
+Comprehensive access controls ensure only authorized personnel can access data:
+
+<Steps>
+  <Step title="Teacher authentication">
+    Teachers must authenticate to access CoGuide and classroom data.
+  </Step>
+  
+  <Step title="Role-based access">
+    Different access levels for teachers, administrators, and IT staff.
+  </Step>
+  
+  <Step title="Audit logging">
+    All data access logged and monitored for security.
+  </Step>
+  
+  <Step title="Session management">
+    Automatic logout and session timeout for security.
+  </Step>
+</Steps>
+
+### Network security
+
+<Columns cols={2}>
+  <Card title="Secure connections" icon="shield">
+    **Protected communication**
+    - All network traffic encrypted
+    - VPN support for additional security
+    - Firewall-friendly design
+    - No unencrypted data transmission
+  </Card>
+  
+  <Card title="Offline capability" icon="wifi-off">
+    **Local operation**
+    - Works completely offline
+    - No internet required for core functions
+    - Data syncs when connection available
+    - Maximum privacy and security
+  </Card>
+</Columns>
+
+## Compliance and regulations
+
+### FERPA compliance
+
+CoGuide is designed to comply with the Family Educational Rights and Privacy Act (FERPA):
+
+<AccordionGroup>
+  <Accordion title="No PII collection">
+    - No personally identifiable information collected
+    - Data cannot be linked to individual students
+    - Anonymous participation tracking only
+    - School controls all data access
+  </Accordion>
+  
+  <Accordion title="Educational purpose">
+    - Data used only for educational purposes
+    - No commercial use of student data
+    - No sharing with third parties
+    - School maintains data ownership
+  </Accordion>
+  
+  <Accordion title="Parent rights">
+    - Parents can request data deletion
+    - School controls data access and sharing
+    - No data used for non-educational purposes
+    - Transparent data practices
+  </Accordion>
+</AccordionGroup>
+
+### COPPA compliance
+
+Complies with the Children's Online Privacy Protection Act (COPPA):
+
+- **No personal information**: No collection of personal information from children
+- **School-controlled**: All data processing under school control
+- **No third-party sharing**: No data shared with external parties
+- **Parental consent**: School obtains necessary parental consent
+
+### State privacy laws
+
+CoGuide complies with state student privacy laws including:
+
+- **California Student Privacy Rights Act (CalSPRA)**
+- **New York Education Law Section 2-d**
+- **Illinois Student Online Personal Protection Act (SOPPA)**
+- **Other state privacy regulations**
+
+## Data retention and deletion
+
+### Retention policies
+
+<Steps>
+  <Step title="Configurable retention">
+    Schools can set their own data retention periods (7-90 days recommended).
+  </Step>
+  
+  <Step title="Automatic deletion">
+    Data automatically deleted when retention period expires.
+  </Step>
+  
+  <Step title="Manual deletion">
+    Teachers and administrators can delete data immediately if needed.
+  </Step>
+  
+  <Step title="Audit trail">
+    All data deletion logged and auditable.
+  </Step>
+</Steps>
+
+### Data deletion options
+
+<AccordionGroup>
+  <Accordion title="Immediate deletion">
+    - Delete specific class sessions
+    - Remove individual student data
+    - Clear all data from device
+    - Emergency data purge
+  </Accordion>
+  
+  <Accordion title="Scheduled deletion">
+    - Automatic deletion after retention period
+    - End-of-semester data purging
+    - End-of-year data cleanup
+    - Custom deletion schedules
+  </Accordion>
+  
+  <Accordion title="Export and delete">
+    - Export data before deletion
+    - Create backups if needed
+    - Verify data removal
+    - Confirm deletion completion
+  </Accordion>
+</AccordionGroup>
+
+## School data ownership
+
+### Complete data control
+
+Your school maintains complete control over all data:
+
+#### Data ownership
+- **School property**: All data belongs to your school
+- **No third-party access**: CoGuide cannot access your data
+- **School policies**: Your school's data policies apply
+- **Complete control**: School decides how data is used and shared
+
+#### Data portability
+- **Export capabilities**: Export all data in standard formats
+- **Data migration**: Move data to other systems if needed
+- **No vendor lock-in**: Data not tied to CoGuide platform
+- **Open formats**: Data stored in open, accessible formats
+
+### IT administration
+
+School IT administrators have full control over CoGuide deployment:
+
+<Columns cols={2}>
+  <Card title="Deployment control" icon="cog">
+    **IT management**
+    - Control where data is stored
+    - Set security policies
+    - Manage user access
+    - Monitor data usage
+  </Card>
+  
+  <Card title="Compliance oversight" icon="clipboard-check">
+    **Regulatory compliance**
+    - Ensure FERPA compliance
+    - Monitor data retention
+    - Audit data access
+    - Report on data practices
+  </Card>
+</Columns>
+
+## Transparency and communication
+
+### Clear privacy policies
+
+<Steps>
+  <Step title="Written policies">
+    Clear, written privacy policies explain data collection and use.
+  </Step>
+  
+  <Step title="Regular updates">
+    Privacy policies updated regularly and communicated to stakeholders.
+  </Step>
+  
+  <Step title="Easy access">
+    Privacy policies easily accessible to teachers, students, and parents.
+  </Step>
+  
+  <Step title="Plain language">
+    Policies written in clear, understandable language.
+  </Step>
+</Steps>
+
+### Stakeholder communication
+
+<AccordionGroup>
+  <Accordion title="Teacher training">
+    - Privacy training for all teachers using CoGuide
+    - Clear guidelines on data use and protection
+    - Regular updates on privacy practices
+    - Support for privacy-related questions
+  </Accordion>
+  
+  <Accordion title="Parent communication">
+    - Clear explanation of what data is collected
+    - Information about privacy protections
+    - Contact information for privacy questions
+    - Regular updates on privacy practices
+  </Accordion>
+  
+  <Accordion title="Student awareness">
+    - Age-appropriate explanation of classroom monitoring
+    - Information about privacy protections
+    - Clear understanding of what is tracked
+    - Reassurance about data security
+  </Accordion>
+</AccordionGroup>
+
+## Security best practices
+
+### For teachers
+
+<Steps>
+  <Step title="Secure devices">
+    Keep classroom devices updated and secure.
+  </Step>
+  
+  <Step title="Access control">
+    Use strong passwords and enable device locks.
+  </Step>
+  
+  <Step title="Data handling">
+    Follow school policies for data access and sharing.
+  </Step>
+  
+  <Step title="Regular updates">
+    Keep CoGuide software updated for latest security features.
+  </Step>
+</Steps>
+
+### For IT administrators
+
+<Steps>
+  <Step title="Network security">
+    Ensure secure network configuration for CoGuide deployment.
+  </Step>
+  
+  <Step title="Access management">
+    Implement proper user access controls and monitoring.
+  </Step>
+  
+  <Step title="Data backup">
+    Establish secure data backup and recovery procedures.
+  </Step>
+  
+  <Step title="Security monitoring">
+    Monitor CoGuide usage and data access for security issues.
+  </Step>
+</Steps>
+
+## Incident response
+
+### Security incident procedures
+
+<Steps>
+  <Step title="Immediate response">
+    Stop monitoring and secure data if security incident occurs.
+  </Step>
+  
+  <Step title="Assessment">
+    Assess scope and impact of any security incident.
+  </Step>
+  
+  <Step title="Notification">
+    Notify appropriate stakeholders according to school policies.
+  </Step>
+  
+  <Step title="Recovery">
+    Implement recovery procedures and security improvements.
+  </Step>
+</Steps>
+
+### Data breach procedures
+
+<AccordionGroup>
+  <Accordion title="Immediate actions">
+    - Stop all data collection immediately
+    - Secure all devices and data
+    - Assess scope of breach
+    - Notify school administration
+  </Accordion>
+  
+  <Accordion title="Investigation">
+    - Determine cause of breach
+    - Identify affected data
+    - Assess potential impact
+    - Document findings
+  </Accordion>
+  
+  <Accordion title="Recovery">
+    - Implement security fixes
+    - Restore secure operations
+    - Update security procedures
+    - Monitor for additional issues
+  </Accordion>
+</AccordionGroup>
+
+## Privacy questions and support
+
+### Getting help
+
+<CardGroup cols={2}>
+  <Card title="Privacy documentation" icon="book">
+    Detailed privacy policies and procedures available in CoGuide documentation.
+  </Card>
+  
+  <Card title="Support team" icon="headset">
+    Contact our privacy team at [privacy@coguide.ai](mailto:privacy@coguide.ai) for privacy questions.
+  </Card>
+  
+  <Card title="School IT" icon="building">
+    Work with your school's IT department for technical privacy questions.
+  </Card>
+  
+  <Card title="Legal counsel" icon="scale">
+    Consult with your school's legal team for compliance questions.
+  </Card>
+</CardGroup>
+
+### Regular privacy reviews
+
+- **Annual reviews**: Regular privacy policy and practice reviews
+- **Compliance audits**: Periodic compliance assessments
+- **Security updates**: Regular security updates and improvements
+- **Stakeholder feedback**: Regular input from teachers, students, and parents
+
+## Next steps
+
+Learn more about CoGuide's privacy and security features:
+
+<CardGroup cols={2}>
+  <Card title="Data protection" icon="shield" href="/data-protection">
+    Detailed information about data protection measures and procedures.
+  </Card>
+  
+  <Card title="Compliance" icon="clipboard-check" href="/compliance">
+    Comprehensive compliance information for FERPA, COPPA, and state laws.
+  </Card>
+  
+  <Card title="Analytics insights" icon="chart-line" href="/analytics-insights">
+    Learn how analytics protect privacy while providing valuable insights.
+  </Card>
+  
+  <Card title="Integrations" icon="plug" href="/integrations">
+    Understand how integrations maintain privacy and security.
+  </Card>
+</CardGroup>

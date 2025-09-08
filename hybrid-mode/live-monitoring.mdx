@@ -1,0 +1,276 @@
+---
+title: "Live Monitoring"
+description: "Real-time participation tracking and classroom awareness features"
+---
+
+## Live monitoring overview
+
+CoGuide's live monitoring provides real-time insights into classroom participation through an unobtrusive overlay that updates continuously during your class. This gives you immediate awareness of engagement patterns without disrupting your teaching flow.
+
+## Core monitoring features
+
+### Hand raise detection
+
+CoGuide automatically detects and counts students with raised hands in real-time.
+
+<Columns cols={2}>
+  <Card title="Detection accuracy" icon="target">
+    **High precision**: Advanced computer vision identifies hand-raising gestures
+    - Works with various hand positions and angles
+    - Adapts to different lighting conditions
+    - Filters out false positives from normal movement
+  </Card>
+  
+  <Card title="Live counter" icon="calculator">
+    **Instant updates**: Real-time count of students with hands raised
+    - Updates immediately when hands go up or down
+    - Persistent count throughout the class
+    - Visual indicator shows current number
+  </Card>
+</Columns>
+
+### Talk time tracking
+
+Separate monitoring of teacher and student speaking time provides insights into classroom dynamics.
+
+#### Teacher talk time
+- **Speaking duration**: Total time you spend talking
+- **Percentage tracking**: Your talk time as percentage of total class time
+- **Visual meter**: Real-time indicator of your speaking time
+- **Balance alerts**: Notifications when teacher talk time exceeds recommended levels
+
+#### Student talk time
+- **Collective tracking**: Total time all students spend speaking
+- **Individual contributions**: Time each student participates (when using seat mapping)
+- **Response patterns**: Analysis of student speaking distribution
+- **Engagement indicators**: Visual cues for student participation levels
+
+### Turn tracking
+
+Monitor student participation opportunities and response patterns.
+
+<Steps>
+  <Step title="Turn detection">
+    CoGuide identifies when students respond to questions or participate in discussions.
+  </Step>
+  
+  <Step title="Turn counting">
+    Each student response is counted and tracked throughout the class.
+  </Step>
+  
+  <Step title="Pattern analysis">
+    The system identifies participation patterns and frequency.
+  </Step>
+  
+  <Step title="Visual feedback">
+    Turn counts are displayed in the live overlay for immediate awareness.
+  </Step>
+</Steps>
+
+### Wait time monitoring
+
+Track response times after questions to improve classroom pacing.
+
+#### Automatic detection
+- **Question identification**: Detects when you ask questions
+- **Response timing**: Measures time until first student responds
+- **Extended wait alerts**: Notifies you when wait times exceed thresholds
+- **Pattern recognition**: Identifies questions that consistently have long wait times
+
+#### Visual indicators
+- **Timer display**: Shows elapsed time since last question
+- **Color coding**: Green for normal wait times, yellow for extended, red for very long
+- **Alert notifications**: Visual and optional audio alerts for extended wait times
+
+## Overlay interface
+
+### Main display elements
+
+The live monitoring overlay shows key metrics in a compact, customizable format:
+
+```
+┌─────────────────────────┐
+│  CoGuide Standby        │
+├─────────────────────────┤
+│  🙋 Hand raises: 3      │
+│  🎤 Teacher: 45%        │
+│  👥 Students: 35%       │
+│  🔄 Turns: 12           │
+│  ⏱️  Wait: 2s           │
+└─────────────────────────┘
+```
+
+### Customization options
+
+<AccordionGroup>
+  <Accordion title="Display preferences">
+    - **Size**: Resize overlay to fit your screen and preferences
+    - **Position**: Drag to any location on your screen
+    - **Transparency**: Adjust opacity to reduce distraction
+    - **Theme**: Choose color scheme that matches your display
+  </Accordion>
+  
+  <Accordion title="Metric selection">
+    - **Show/hide metrics**: Choose which metrics to display
+    - **Layout options**: Arrange metrics in different configurations
+    - **Update frequency**: Control how often metrics refresh
+    - **Alert settings**: Customize notification preferences
+  </Accordion>
+  
+  <Accordion title="Visual indicators">
+    - **Color coding**: Set colors for different metric ranges
+    - **Animation**: Enable/disable visual effects and transitions
+    - **Icons**: Choose from different icon sets
+    - **Font size**: Adjust text size for better visibility
+  </Accordion>
+</AccordionGroup>
+
+## Advanced features
+
+### Real-time alerts
+
+Configure alerts to help you maintain optimal classroom dynamics:
+
+#### Talk time balance
+- **Teacher dominance**: Alert when you're talking too much
+- **Student engagement**: Notify when student participation is low
+- **Balance recommendations**: Suggestions for improving participation balance
+
+#### Wait time management
+- **Extended silence**: Alert when wait times exceed your threshold
+- **Question effectiveness**: Identify questions that consistently have long wait times
+- **Pacing guidance**: Recommendations for better question timing
+
+#### Participation patterns
+- **Dominant speakers**: Identify students who participate excessively
+- **Quiet students**: Flag students who haven't participated recently
+- **Engagement drops**: Alert when overall participation decreases
+
+### Integration with seat mapping
+
+When using seat mapping, live monitoring provides location-specific insights:
+
+- **Seat-based tracking**: See which specific seats are participating
+- **Participation heatmap**: Visual representation of engagement by location
+- **Individual metrics**: Track participation for each seat/student
+- **Pattern analysis**: Identify participation patterns across the classroom
+
+## Best practices for live monitoring
+
+### Getting started
+
+<Steps>
+  <Step title="Start simple">
+    Begin with basic metrics (hand raises, talk time) before adding advanced features.
+  </Step>
+  
+  <Step title="Position carefully">
+    Place the overlay where it's visible but doesn't obstruct important content.
+  </Step>
+  
+  <Step title="Monitor gradually">
+    Check metrics occasionally rather than constantly to avoid distraction.
+  </Step>
+  
+  <Step title="Adjust settings">
+    Fine-tune alerts and thresholds based on your teaching style and class dynamics.
+  </Step>
+</Steps>
+
+### Effective use during class
+
+<Tabs>
+  <Tab title="Questioning">
+    - Use wait time alerts to improve question pacing
+    - Monitor hand raises to gauge question difficulty
+    - Track response patterns to identify effective questioning techniques
+  </Tab>
+  
+  <Tab title="Discussion management">
+    - Balance teacher and student talk time for better engagement
+    - Use turn tracking to ensure all students have opportunities to participate
+    - Monitor participation patterns to guide discussion flow
+  </Tab>
+  
+  <Tab title="Classroom management">
+    - Use hand raise counts to manage response order
+    - Monitor engagement levels to adjust lesson pace
+    - Track participation to identify students who may need support
+  </Tab>
+</Tabs>
+
+### Interpreting the data
+
+<Note>
+  **Remember**: Live monitoring provides awareness, not judgment. Use insights to improve your teaching, not to evaluate students.
+</Note>
+
+#### Key indicators to watch
+- **Hand raise frequency**: High numbers may indicate engaging content or unclear instructions
+- **Talk time balance**: Aim for 60-70% student talk time in discussion-based classes
+- **Wait time patterns**: Consistent long waits may indicate questions that are too difficult
+- **Turn distribution**: Uneven participation may suggest need for different engagement strategies
+
+## Troubleshooting live monitoring
+
+### Common issues and solutions
+
+<AccordionGroup>
+  <Accordion title="Metrics not updating">
+    **Possible causes:**
+    - Camera or microphone not working properly
+    - Poor lighting affecting detection
+    - Students not visible in camera frame
+    
+    **Solutions:**
+    - Check device permissions and hardware
+    - Improve classroom lighting
+    - Adjust camera angle and positioning
+  </Accordion>
+  
+  <Accordion title="Inaccurate hand raise detection">
+    **Possible causes:**
+    - Camera angle or distance issues
+    - Lighting conditions affecting detection
+    - Calibration needs adjustment
+    
+    **Solutions:**
+    - Reposition camera for better view
+    - Adjust lighting or use different detection sensitivity
+    - Recalibrate hand raise detection settings
+  </Accordion>
+  
+  <Accordion title="Overlay interfering with teaching">
+    **Possible causes:**
+    - Overlay positioned over important content
+    - Too many metrics displayed
+    - Size or transparency not optimized
+    
+    **Solutions:**
+    - Move overlay to less critical screen area
+    - Hide unnecessary metrics
+    - Adjust size and transparency settings
+  </Accordion>
+</AccordionGroup>
+
+## Next steps
+
+Explore more advanced features:
+
+<CardGroup cols={2}>
+  <Card title="Seat mapping" icon="map" href="/hybrid-mode/seat-mapping">
+    Set up location-based participation tracking for detailed insights.
+  </Card>
+  
+  <Card title="Teacher controls" icon="sliders" href="/hybrid-mode/controls">
+    Master all the controls and settings for live monitoring.
+  </Card>
+  
+  <Card title="Analytics insights" icon="chart-line" href="/analytics-insights">
+    Learn about detailed post-class reports and analysis.
+  </Card>
+  
+  <Card title="Privacy settings" icon="shield" href="/privacy-security">
+    Understand data handling and privacy protection features.
+  </Card>
+</CardGroup>

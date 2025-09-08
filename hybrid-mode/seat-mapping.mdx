@@ -1,0 +1,384 @@
+---
+title: "Seat Mapping"
+description: "Location-based participation tracking without facial recognition"
+---
+
+## What is seat mapping?
+
+Seat mapping allows CoGuide to track participation by classroom location rather than individual identity. This privacy-first approach uses simple seat labels (A1, A2, B1, etc.) to provide detailed participation insights while protecting student privacy.
+
+<Note>
+  **Privacy by design**: No facial recognition is used. Participation is tied to seat locations, not student identities.
+</Note>
+
+## Why use seat mapping?
+
+### Enhanced participation tracking
+- **Individual insights**: Track participation for each seat/student
+- **Pattern recognition**: Identify participation patterns across the classroom
+- **Targeted support**: Identify students who may need additional engagement opportunities
+- **Detailed analytics**: Get comprehensive reports on classroom participation
+
+### Privacy protection
+- **No facial recognition**: Students' faces are never analyzed or stored
+- **Location-based only**: Data is tied to seat numbers, not personal identity
+- **Anonymous reporting**: Analytics show participation by seat, not by name
+- **Secure data**: All location data is encrypted and stored securely
+
+## Setting up seat mapping
+
+### Creating your seat map
+
+<Steps>
+  <Step title="Access seat mapping">
+    Open CoGuide and navigate to Settings > Seat Mapping to begin setup.
+  </Step>
+  
+  <Step title="Choose layout method">
+    Select from:
+    - **Template layouts**: Choose from common classroom arrangements
+    - **Custom layout**: Create your own classroom configuration
+    - **Upload image**: Use an existing classroom photo or diagram
+  </Step>
+  
+  <Step title="Label seats">
+    Assign labels to each seat using a simple system:
+    - **Row-based**: A1, A2, A3, B1, B2, B3, etc.
+    - **Number-based**: 1, 2, 3, 4, 5, 6, etc.
+    - **Custom**: Create your own labeling system
+  </Step>
+  
+  <Step title="Position camera">
+    Ensure your camera can see all seats clearly for accurate tracking.
+  </Step>
+  
+  <Step title="Calibrate tracking">
+    Run the calibration process to ensure accurate seat detection.
+  </Step>
+</Steps>
+
+### Layout options
+
+<Columns cols={2}>
+  <Card title="Traditional rows" icon="table">
+    **Standard classroom setup**
+    - Rows of desks facing front
+    - Easy A1, A2, B1, B2 labeling
+    - Clear sight lines for camera
+    - Most common configuration
+  </Card>
+  
+  <Card title="U-shaped arrangement" icon="horseshoe">
+    **Discussion-focused setup**
+    - Desks arranged in U-shape
+    - All students face center
+    - Good for group discussions
+    - Requires careful camera positioning
+  </Card>
+  
+  <Card title="Group tables" icon="users">
+    **Collaborative setup**
+    - Small groups at tables
+    - Label by table and seat
+    - Great for group work
+    - May need multiple cameras
+  </Card>
+  
+  <Card title="Lab stations" icon="flask">
+    **Science lab setup**
+    - Workstations with equipment
+    - Label by station number
+    - Account for equipment visibility
+    - May need specialized positioning
+  </Card>
+</Columns>
+
+## Seat labeling systems
+
+### Recommended labeling
+
+Choose a labeling system that's easy to remember and use:
+
+#### Row-based system (A1, A2, B1, B2...)
+```
+Front of room
+┌─────┬─────┬─────┬─────┐
+│ A1  │ A2  │ A3  │ A4  │
+├─────┼─────┼─────┼─────┤
+│ B1  │ B2  │ B3  │ B4  │
+├─────┼─────┼─────┼─────┤
+│ C1  │ C2  │ C3  │ C4  │
+└─────┴─────┴─────┴─────┘
+```
+
+#### Number-based system (1, 2, 3, 4...)
+```
+Front of room
+┌─────┬─────┬─────┬─────┐
+│  1  │  2  │  3  │  4  │
+├─────┼─────┼─────┼─────┤
+│  5  │  6  │  7  │  8  │
+├─────┼─────┼─────┼─────┤
+│  9  │ 10  │ 11  │ 12  │
+└─────┴─────┴─────┴─────┘
+```
+
+#### Custom system
+Create your own labeling that works for your classroom:
+- **Subject-based**: Math1, Math2, Science1, Science2
+- **Color-based**: Red1, Red2, Blue1, Blue2
+- **Name-based**: Use student names (with permission)
+
+### Labeling best practices
+
+<AccordionGroup>
+  <Accordion title="Consistency">
+    - Use the same labeling system throughout the year
+    - Make labels clearly visible to students
+    - Update labels when seating changes
+    - Keep a record of your labeling system
+  </Accordion>
+  
+  <Accordion title="Visibility">
+    - Ensure labels are visible to the camera
+    - Use contrasting colors for better detection
+    - Consider label size and font
+    - Test visibility from camera position
+  </Accordion>
+  
+  <Accordion title="Student awareness">
+    - Explain the labeling system to students
+    - Help students learn their seat numbers
+    - Use labels consistently in class activities
+    - Make labels part of classroom routine
+  </Accordion>
+</AccordionGroup>
+
+## Camera positioning for seat mapping
+
+### Optimal camera placement
+
+<Steps>
+  <Step title="Height positioning">
+    Place camera at eye level or slightly higher for best seat visibility.
+  </Step>
+  
+  <Step title="Angle adjustment">
+    Position camera to capture all seats without obstruction.
+  </Step>
+  
+  <Step title="Distance consideration">
+    Ensure camera is close enough to see seat labels clearly.
+  </Step>
+  
+  <Step title="Lighting check">
+    Verify adequate lighting for clear seat detection.
+  </Step>
+</Steps>
+
+### Common positioning challenges
+
+<Tabs>
+  <Tab title="Large classrooms">
+    - Use wide-angle camera settings
+    - Position camera higher for better coverage
+    - Consider multiple cameras for very large rooms
+    - Test visibility from different positions
+  </Tab>
+  
+  <Tab title="Obstructions">
+    - Move or work around pillars, equipment, or furniture
+    - Adjust camera angle to minimize obstructions
+    - Consider alternative camera positions
+    - Use multiple cameras if necessary
+  </Tab>
+  
+  <Tab title="Lighting issues">
+    - Ensure consistent lighting across all seats
+    - Avoid backlighting from windows
+    - Use additional lighting if needed
+    - Test detection in different lighting conditions
+  </Tab>
+</Tabs>
+
+## Calibration process
+
+### Initial calibration
+
+<Steps>
+  <Step title="Start calibration">
+    Launch the seat mapping calibration tool in CoGuide.
+  </Step>
+  
+  <Step title="Test each seat">
+    Have students sit in each seat one at a time for detection testing.
+  </Step>
+  
+  <Step title="Verify labels">
+    Confirm that each seat is correctly identified and labeled.
+  </Step>
+  
+  <Step title="Adjust settings">
+    Fine-tune detection sensitivity and positioning as needed.
+  </Step>
+  
+  <Step title="Save configuration">
+    Save your seat map configuration for future use.
+  </Step>
+</Steps>
+
+### Ongoing calibration
+
+- **Regular checks**: Verify seat detection accuracy periodically
+- **Seating changes**: Recalibrate when seating arrangements change
+- **Lighting changes**: Adjust settings when classroom lighting changes
+- **Seasonal adjustments**: Account for different lighting throughout the year
+
+## Using seat mapping data
+
+### Live monitoring with seat mapping
+
+When seat mapping is enabled, the live overlay shows:
+
+- **Seat-specific participation**: See which seats are participating
+- **Individual metrics**: Track participation for each seat
+- **Participation heatmap**: Visual representation of engagement by location
+- **Real-time updates**: Live updates as students participate
+
+### Analytics and insights
+
+Seat mapping enables detailed post-class analytics:
+
+#### Individual participation
+- **Participation frequency**: How often each seat participates
+- **Response patterns**: Timing and frequency of responses
+- **Engagement levels**: Overall participation for each seat
+- **Trend analysis**: Changes in participation over time
+
+#### Classroom patterns
+- **Hot spots**: Areas of high participation
+- **Quiet zones**: Areas with lower engagement
+- **Participation flow**: How participation moves around the classroom
+- **Group dynamics**: Patterns in group work and discussions
+
+#### Teacher insights
+- **Student support**: Identify students who may need additional engagement
+- **Seating optimization**: Data to inform seating arrangements
+- **Lesson effectiveness**: How different parts of lessons affect participation
+- **Classroom management**: Insights for better classroom dynamics
+
+## Privacy and data protection
+
+### Data handling with seat mapping
+
+<Warning>
+  **Important**: Seat mapping data is treated with the same privacy protections as all CoGuide data.
+</Warning>
+
+#### What data is collected
+- **Seat participation**: When and how often each seat participates
+- **Participation patterns**: Timing and frequency of responses
+- **Location data**: Which seats are occupied and participating
+- **No personal information**: No names, faces, or identifying information
+
+#### Data protection measures
+- **Encryption**: All data encrypted in transit and at rest
+- **Local processing**: Analysis happens on your device
+- **School ownership**: Data belongs to your school
+- **Retention policies**: Data kept only as long as needed
+- **Access controls**: Only authorized teachers can access data
+
+### Compliance considerations
+
+<AccordionGroup>
+  <Accordion title="FERPA compliance">
+    - No personally identifiable information collected
+    - Data tied to seat locations, not student identities
+    - School controls data access and retention
+    - Students cannot be individually identified from data
+  </Accordion>
+  
+  <Accordion title="COPPA compliance">
+    - No collection of personal information from students
+    - Data processing happens in school-controlled environment
+    - No data shared with third parties without consent
+    - School maintains control over all data
+  </Accordion>
+  
+  <Accordion title="State privacy laws">
+    - Complies with state student privacy laws
+    - No facial recognition or biometric data collection
+    - Data minimization principles followed
+    - School maintains data ownership and control
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting seat mapping
+
+### Common issues and solutions
+
+<AccordionGroup>
+  <Accordion title="Seats not detected">
+    **Possible causes:**
+    - Camera positioning issues
+    - Poor lighting affecting detection
+    - Seat labels not visible
+    - Calibration needs adjustment
+    
+    **Solutions:**
+    - Reposition camera for better view
+    - Improve lighting conditions
+    - Make seat labels more visible
+    - Recalibrate seat detection
+  </Accordion>
+  
+  <Accordion title="Incorrect seat identification">
+    **Possible causes:**
+    - Similar-looking seats causing confusion
+    - Camera angle affecting detection
+    - Lighting creating shadows or glare
+    - Calibration drift over time
+    
+    **Solutions:**
+    - Make seat labels more distinct
+    - Adjust camera angle and position
+    - Improve lighting consistency
+    - Recalibrate detection settings
+  </Accordion>
+  
+  <Accordion title="Participation not tracked">
+    **Possible causes:**
+    - Students not visible in camera frame
+    - Hand raise detection not working
+    - Microphone issues affecting voice detection
+    - Settings not properly configured
+    
+    **Solutions:**
+    - Ensure all students are visible
+    - Check hand raise detection settings
+    - Verify microphone is working
+    - Review and adjust tracking settings
+  </Accordion>
+</AccordionGroup>
+
+## Next steps
+
+Now that you understand seat mapping, explore:
+
+<CardGroup cols={2}>
+  <Card title="Live monitoring" icon="eye" href="/hybrid-mode/live-monitoring">
+    Learn how seat mapping enhances live participation tracking.
+  </Card>
+  
+  <Card title="Analytics insights" icon="chart-line" href="/analytics-insights">
+    Discover detailed reports and analysis enabled by seat mapping.
+  </Card>
+  
+  <Card title="Privacy security" icon="shield" href="/privacy-security">
+    Understand how seat mapping protects student privacy.
+  </Card>
+  
+  <Card title="Teacher controls" icon="sliders" href="/hybrid-mode/controls">
+    Master all the controls and settings for seat mapping.
+  </Card>
+</CardGroup>
