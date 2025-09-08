@@ -86,7 +86,7 @@
     "primary": {
       "type": "button",
       "label": "Try Standby",
-      "href": "https://coguide.ai/try"
+      "href": "https://coguide.ai/"
     }
   },
   "contextual": {
